@@ -97,6 +97,10 @@ noremap <c-right> <c-w><
 " Close current window
 noremap <c-j><c-j> <c-w>q
 
+" br mark
+inoremap <c-b> <ESC>A<br><CR>
+nnoremap <c-b> A<br><CR>
+
 " Autocompletion on all open chars
 "inoremap ( ()<Left>
 "inoremap [ []<Left>
