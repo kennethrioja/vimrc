@@ -191,7 +191,7 @@ augroup END
 " VIMWIKI ---------------------------------------------------------------- {{{
 set nocompatible
 let g:vimwiki_list = [
-                        \ {'path': '~/second-brain/',
+                        \ {'path': '~/secondbrain/',
                         \ 'index': 'README',
                         \ 'syntax': 'markdown',
                         \ 'ext': '.md'}
