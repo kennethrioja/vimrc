@@ -25,3 +25,11 @@ mv ~/.vim/plugged/42header/plugin/ ~/.vim/ && \
 sed -ie 's/krioja/YOURUSERNAME/g' ~/.vimrc && \
 sed -ie 's/marvin@lausanne.ch/YOUREMAILADDRESS/g' ~/.vimrc
 ```
+
+## Using WSL and vimwiki :
+
+To allow vimwiki to open URLs, execute this :
+
+```sh
+echo -e "# for vimwiki URLs to work\nexport BROWSER="powershell.exe /C start" >> ~/.bashrc && source ~/.bashrc
+```
