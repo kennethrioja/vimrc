@@ -10,7 +10,7 @@ To install it, execute the following in the terminal :
 cd ~ && \
 git clone https://github.com/kennethrioja/vimrc.git && \
 ln -s ~/vimrc/.vimrc ./ && \
-mkdir ~/.cache/vim && \
+if [ ! -d ~/.cache/vim ]; then mkdir ~/.cache/vim ; fi && \
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && \
 vim +'PlugInstall --sync' +qa
