@@ -31,5 +31,6 @@ sed -ie 's/marvin@lausanne.ch/YOUREMAILADDRESS/g' ~/.vimrc
 To allow vimwiki to open URLs, execute this :
 
 ```sh
-echo -e  echo -e '\n# for vimwiki URLs to work in WSL\nexport BROWSER="powershell.exe /C start"' >> ~/.bashrc && source ~/.bashrc
+echo -e '\n# for vimwiki URLs to work in WSL\nexport BROWSER="powershell.exe /C start"' >> ~/.bashrc && \
+source ~/.bashrc
 ```
