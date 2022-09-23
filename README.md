@@ -26,10 +26,10 @@ sed -ie 's/krioja/YOURUSERNAME/g' ~/.vimrc && \
 sed -ie 's/marvin@lausanne.ch/YOUREMAILADDRESS/g' ~/.vimrc
 ```
 
-## Using WSL and vimwiki :
+## Using WSL and vimwiki ?
 
 To allow vimwiki to open URLs, execute this :
 
 ```sh
-echo -e "# for vimwiki URLs to work\nexport BROWSER="powershell.exe /C start" >> ~/.bashrc && source ~/.bashrc
+echo -e  echo -e '\n# for vimwiki URLs to work in WSL\nexport BROWSER="powershell.exe /C start"' >> ~/.bashrc && source ~/.bashrc
 ```
