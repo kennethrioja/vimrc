@@ -25,7 +25,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'vimwiki/vimwiki'
-Plug 'gosukiwi/vim-zensnippets'
+Plug 'tpope/vim-surround'
 call plug#end()
 " }}}
 
