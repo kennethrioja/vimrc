@@ -27,6 +27,7 @@ Plug 'mzlogin/vim-markdown-toc'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
+Plug 'inkarkat/vim-ReplaceWithRegister'
 call plug#end()
 " }}}
 
