@@ -26,6 +26,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 call plug#end()
 " }}}
 
