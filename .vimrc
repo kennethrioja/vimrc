@@ -21,13 +21,15 @@
 " PLUGINS ---------------------------------------------------------------- {{{
 call plug#begin('~/.vim/plugged')
 Plug '42Paris/42header'
-Plug 'scrooloose/nerdtree'
-Plug 'vim-airline/vim-airline'
-Plug 'mzlogin/vim-markdown-toc'
-Plug 'vimwiki/vimwiki'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
+Plug 'christoomey/vim-sort-motion'
+Plug 'christoomey/vim-titlecase'
 Plug 'inkarkat/vim-ReplaceWithRegister'
+Plug 'mzlogin/vim-markdown-toc'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 " }}}
 
