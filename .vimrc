@@ -33,15 +33,54 @@ Plug 'vimwiki/vimwiki'
 call plug#end()
 " }}}
 
-" INDENTATION ------------------------------------------------------------ {{{
-filetype indent on "Enable indentation rules that are file-type specific
-set tabstop=4 "Indent using four spaces
-set softtabstop=4 "Number of spaces in <Tab>
-set shiftwidth=4 "When shifting, indent using four spaces
-set expandtab "use space char instead of tabs
-set autoindent "New lines inherit the indentation of previous lines
-set smarttab "Insert “tabstop” number of spaces with the “tab” key
+" 42VIMRC ---------------------------------------------------------------- {{{
+
+"Activate indentation
+filetype off
+filetype plugin indent on
 set smartindent "Do smart autoindenting when starting a new line
+
+"Non-expanded, 4-wide tabulations
+set tabstop=4 "Indent using four spaces
+set shiftwidth=4 "When shifting, indent using four spaces
+set noexpandtab "Not using spaces char instead of tabs
+
+"Disable vi-compatibility
+set nocompatible
+
+"Real-world encoding
+set encoding=utf-8
+
+"Interpret modelines in files
+set modelines=1
+
+"Do not abandon buffers
+set hidden
+
+"Don't bother throttling tty
+set ttyfast
+
+"More useful backspace behavior
+set backspace=indent,eol,start
+
+"Use statusbar on all windows
+set laststatus=2
+
+"Better search
+set ignorecase "Ignore capital letters during search
+set smartcase " Override the ignorecase option if searching for capital letters. This will allow you to search specifically for capital letters
+set incsearch "Incremental search that shows partial matches
+set showmatch "Highlight matching [{()}]
+set hlsearch " Use highlighting when doing a search.
+
+" }}}
+
+" INDENTATION ------------------------------------------------------------ {{{
+" set smarttab "Insert “tabstop” number of spaces with the “tab” key
+" set softtabstop=4 "Number of spaces in <Tab>
+" set expandtab "use space char instead of tabs
+" set autoindent "New lines inherit the indentation of previous lines
+" set smartindent "Do smart autoindenting when starting a new line
 " }}}
 
 " MAPPINGS --------------------------------------------------------------- {{{
@@ -150,14 +189,6 @@ let g:user42='krioja'
 let g:mail42='marvin@42lausanne.ch'
 " }}}
 
-" SEARCH ----------------------------------------------------------------- {{{
-set hlsearch "Search highlighting
-set incsearch "Incremental search that shows partial matches
-set smartcase "Automatically switch search to case-sensitive when search query contains an uppercase letter
-set ignorecase "Ignore capital letters during search
-set smartcase " Override the ignorecase option if searching for capital letters. This will allow you to search specifically for capital letters
-" }}}
-
 " UI --------------------------------------------------------------------- {{{
 syntax on " Enable syntax processing
 color koehler " Change color scheme
@@ -165,8 +196,6 @@ set mouse=a "Enable mouse
 set number "Show line numbers
 set relativenumber "Show line relativenumbers
 set showcmd "Show the last command in bottom bar
-set showmatch "Highlight matching [{()}]
-set hlsearch " Use highlighting when doing a search.
 set wildmenu "Visual autocompletion for command menu
 set wildmode=list:longest " Make wildmenu behave like similar to Bash completion
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx " There are certain files that we would never want to edit with Vim. Wildmenu will ignore files with these extensions.
