@@ -191,7 +191,7 @@ let g:mail42='marvin@42lausanne.ch'
 
 " UI --------------------------------------------------------------------- {{{
 syntax on " Enable syntax processing
-color koehler " Change color scheme
+" color koehler " Change color scheme SILENCED IN 42
 set mouse=a "Enable mouse
 set number "Show line numbers
 set relativenumber "Show line relativenumbers
@@ -200,8 +200,8 @@ set wildmenu "Visual autocompletion for command menu
 set wildmode=list:longest " Make wildmenu behave like similar to Bash completion
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx " There are certain files that we would never want to edit with Vim. Wildmenu will ignore files with these extensions.
 set ruler "Always show cursor position
-set list "Enable lists
-set listchars=tab:\>\- "Show tabs
+" set list "Enable lists
+" set listchars=tab:\>\- "Show tabs SILENCED IN 42
 set foldmethod=syntax "Fold based on indention levels
 set foldcolumn=1 "Enable mouse to open and close folds
 set nofoldenable "Open files without closed folds
