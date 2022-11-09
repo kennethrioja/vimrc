@@ -43,6 +43,7 @@ set smartindent "Do smart autoindenting when starting a new line
 "Non-expanded, 4-wide tabulations
 set tabstop=4 "Indent using four spaces
 set shiftwidth=4 "When shifting, indent using four spaces
+set tw=80
 set noexpandtab "Not using spaces char instead of tabs
 
 "Disable vi-compatibility
@@ -209,7 +210,6 @@ set confirm "Display a confirmation dialog when closing an unsaved file
 noremap <F3> :call FoldToggle()<CR>
 "Toggle fold/unfold all folds
 set cursorline " Highlight cursor line underneath the cursor horizontally.
-set cursorcolumn " Highlight cursor line underneath the cursor vertically.
 set scrolloff=5 " do not let cursor scroll below or above N number of lines when scrolling
 set nowrap " Do not wrap lines. Allow long lines to extend as far as the line goes
 " }}}
