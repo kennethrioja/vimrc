@@ -235,3 +235,51 @@ let g:vimwiki_list = [
                 \]
 au BufRead,BufNewFile *.wiki set filetype=md
 " }}}
+
+" CPP CLASS --------------------------------------------------------------- {{{
+"C++ Class Generator
+command! -nargs=1 Class call Class(<f-args>)
+function! Class(ClassName)
+	if !isdirectory("./inc")
+		call mkdir("./inc")
+	endif
+	"==================  editing header file =====================
+	let header = "./inc/".a:ClassName.".hpp"                                                                                                                                                                                                                                                                                        
+	:tabnew "./inc/".a:ClassName."/.hpp"
+	call append(0, "#ifndef ".toupper(a:ClassName)."_HPP")
+	call append(1, "#define ".toupper(a:ClassName)."_HPP")
+	call append(2, "")
+	call append(3, "class ".a:ClassName )                                                                                
+	call append(4, "{")                                                                                                 
+	call append(5, "	public:")                                                                                        
+	call append(6, "		".a:ClassName."();")                                                                          
+	" call append(7, "		virtual ~".a:ClassName."();")                                                                 
+	call append(7, "		~".a:ClassName."();")                                                                 
+	call append(8, "")                                                                                                  
+	" call append(8, "	protected:")                                                                                     
+	" call append(8,"")                                                                                                  
+	call append(9, "	private:")                                                                                       
+	call append(10, "};")                                                                                               
+	call append(11, "")                                                                                                  
+	call append(12, "#endif // ".toupper(a:ClassName)."_H")                                                              
+	:execute 'write' header                                                                                             
+	"================== editing source file ========================                                                      
+	let src    = "./src/".a:ClassName.".cpp"                                                                                     
+	:tabnew "./src/".a:ClassName."/.cpp"                                                                                                                                                                                                                    
+	call append(0, "#include \"".a:ClassName.".hpp\"")                                                                          
+	call append(1, "")
+	call append(2, "// PUBLIC")
+	call append(3, a:ClassName."::".a:ClassName."()")                                                                           
+	call append(4, "{")                                                                                                   
+	call append(5, "//ctor ")                                                                                             
+	call append(6, "}")                                                                                                   
+	call append(7, "")                                                                                                   
+	call append(8, "")                                                                                                   
+	call append(9, a:ClassName."::~".a:ClassName."()")                                                                         
+	call append(10, "{")                                                                                                   
+	call append(11, "//dtor ")                                                                                            
+	call append(12, "}") 
+	call append(13, "// PRIVATE") 
+	:execute 'write' src
+endfunction    
+" }}}
