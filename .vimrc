@@ -145,6 +145,9 @@ noremap <c-j><c-j> <c-w>q
 inoremap <c-b> <ESC>A<br><CR>
 nnoremap <c-b> A<br><CR>
 
+" substitute
+nnoremap ss *yiw:%s/<C-R>"//gc<LEFT><LEFT><LEFT>
+
 " Autocompletion on all open chars
 "inoremap ( ()<Left>
 "inoremap [ []<Left>
