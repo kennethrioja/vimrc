@@ -146,7 +146,7 @@ inoremap <c-b> <ESC>A<br><CR>
 nnoremap <c-b> A<br><CR>
 
 " substitute
-nnoremap <C-S> *yiw:%s/<C-R>"//gc<LEFT><LEFT><LEFT>
+nnoremap SS *yiw:%s/<C-R>"//gc<LEFT><LEFT><LEFT>
 
 " Autocompletion on all open chars
 "inoremap ( ()<Left>
