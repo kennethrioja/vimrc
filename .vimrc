@@ -269,7 +269,7 @@ function! Class(ClassName)
 	call append(16, "	static int	_nbInst;")
 	call append(17, "};")                                                                                               
 	call append(18, "")                                                                                                  
-	call append(19, "#endif // ".toupper(a:ClassName)."_H")                                                              
+	call append(19, "#endif // ".toupper(a:ClassName)."_HPP")                                                              
 	:execute 'write' header                                                                                             
 	"================== editing source file ========================                                                      
 	let src    = "./src/".a:ClassName.".Class.cpp"                                                                                     
