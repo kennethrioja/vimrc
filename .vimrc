@@ -248,10 +248,10 @@ function! Class(ClassName)
 		call mkdir("./inc")
 	endif
 	"==================  editing header file =====================
-	let header = "./inc/".a:ClassName.".Class.hpp"                                                                                                                                                                                                                                                                                        
+	let header = "./inc/".a:ClassName.".hpp"                                                                                                                                                                                                                                                                                        
 	:tabnew "./inc/".a:ClassName."/.hpp"
-	call append(0, "#ifndef ".toupper(a:ClassName)."_CLASS_HPP")
-	call append(1, "# define ".toupper(a:ClassName)."_CLASS_HPP")
+	call append(0, "#ifndef ".toupper(a:ClassName)."_HPP")
+	call append(1, "# define ".toupper(a:ClassName)."_HPP")
 	call append(2, "")
 	call append(3, "class	".a:ClassName."")
 	call append(4, "{")
@@ -269,12 +269,12 @@ function! Class(ClassName)
 	call append(16, "	static int	_nbInst;")
 	call append(17, "};")                                                                                               
 	call append(18, "")                                                                                                  
-	call append(19, "#endif // ".toupper(a:ClassName)."CLASS_HPP")                                                              
+	call append(19, "#endif // ".toupper(a:ClassName)."_HPP")                                                              
 	:execute 'write' header                                                                                             
 	"================== editing source file ========================                                                      
-	let src    = "./src/".a:ClassName.".Class.cpp"                                                                                     
+	let src    = "./src/".a:ClassName.".cpp"                                                                                     
 	:tabnew "./src/".a:ClassName."/.cpp"                                                                                                                                                                                                                    
-	call append(0, "# include \"".a:ClassName.".Class.hpp\"")
+	call append(0, "# include \"".a:ClassName.".hpp\"")
 	call append(1, "# include <iostream>")
 	call append(2, "")
 	call append(3, "// PUBLIC")
