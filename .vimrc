@@ -155,6 +155,12 @@ nnoremap SS *yiw:%s/<C-R>"//gc<LEFT><LEFT><LEFT>
 "inoremap ' ''<Left>
 "inoremap " ""<Left>
 
+" C++ cout
+nnoremap co A<CR>std::cout<space><<<space>
+
+" C++ endl
+nnoremap el A<space><<<space>std::endl;<esc>
+
 " }}}
 
 " MISCELLANEOUS ---------------------------------------------------------- {{{
