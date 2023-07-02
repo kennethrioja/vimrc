@@ -43,7 +43,7 @@ set smartindent "Do smart autoindenting when starting a new line
 "Non-expanded, 4-wide tabulations
 set tabstop=4 "Indent using four spaces
 set shiftwidth=4 "When shifting, indent using four spaces
-set tw=80
+" set tw=80
 set noexpandtab "Not using spaces char instead of tabs
 
 "Disable vi-compatibility
