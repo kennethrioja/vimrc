@@ -87,17 +87,17 @@ set hlsearch " Use highlighting when doing a search.
 " MAPPINGS --------------------------------------------------------------- {{{
 
 " Undoing the bad habits
-inoremap <left> <nop>
-inoremap <down> <nop>
-inoremap <up> <nop>
-inoremap <right> <nop>
+" inoremap <left> <nop>
+" inoremap <down> <nop>
+" inoremap <up> <nop>
+" inoremap <right> <nop>
 
-nnoremap <left> <nop>
-nnoremap <down> <nop>
-nnoremap <up> <nop>
-nnoremap <right> <nop>
+" nnoremap <left> <nop>
+" nnoremap <down> <nop>
+" nnoremap <up> <nop>
+" nnoremap <right> <nop>
 
-inoremap <esc> <nop>
+" inoremap <esc> <nop>
 
 "Set backslash as leader key
 let mapleader="\\"
