@@ -161,6 +161,9 @@ nnoremap co A<CR>std::cout<space><<<space>
 " C++ endl
 nnoremap el A<space><<<space>std::endl;<esc>
 
+" ctags :
+" jump back from the definition
+nnoremap <C-[> <C-t>
 " }}}
 
 " MISCELLANEOUS ---------------------------------------------------------- {{{
