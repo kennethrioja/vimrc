@@ -162,8 +162,19 @@ nnoremap co A<CR>std::cout<space><<<space>
 nnoremap el A<space><<<space>std::endl;<esc>
 
 " ctags :
+" create 'tags_cir6' when opening vim
+silent !ctags -R --exclude=.git -f tags_cir6
+" set tags 
+set tags=./tags,tags,./tags_cir6,tags_cir6
+" delete 'tags_cir6' when quitting vim
+" augroup autocom
+"     autocmd!
+"      autocmd VimLeave * !rm tags_cir6
+" augroup END
 " jump back from the definition
 nnoremap <C-[> <C-t>
+" open tag in new tab
+nnoremap <C-w>t <C-w><C-]><C-w>T
 " }}}
 
 " MISCELLANEOUS ---------------------------------------------------------- {{{
