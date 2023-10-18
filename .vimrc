@@ -73,7 +73,6 @@ set smartcase " Override the ignorecase option if searching for capital letters.
 set incsearch "Incremental search that shows partial matches
 set showmatch "Highlight matching [{()}]
 set hlsearch " Use highlighting when doing a search.
-
 " }}}
 
 " INDENTATION ------------------------------------------------------------ {{{
@@ -177,8 +176,9 @@ nnoremap <C-[> <C-t>
 nnoremap <C-w>t <C-w><C-]><C-w>T
 
 " GREP shortcut
-nnoremap <C-g>g :grep<space>-r<space>""<space>.<left><left><left>
+nnoremap <C-g>g :grep<space>-r<space>--exclude-dir<space>.git<space>""<space>.<left><left><left>
 nnoremap <C-g><space> :cw<cr>
+
 
 " }}}
 
