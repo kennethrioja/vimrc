@@ -175,6 +175,11 @@ set tags=./tags,tags,./tags_cir6,tags_cir6
 nnoremap <C-[> <C-t>
 " open tag in new tab
 nnoremap <C-w>t <C-w><C-]><C-w>T
+
+" GREP shortcut
+nnoremap <C-g>g :grep<space>-r<space>""<space>.<left><left><left>
+nnoremap <C-g><space> :cw<cr>
+
 " }}}
 
 " MISCELLANEOUS ---------------------------------------------------------- {{{
