@@ -73,6 +73,9 @@ set smartcase " Override the ignorecase option if searching for capital letters.
 set incsearch "Incremental search that shows partial matches
 set showmatch "Highlight matching [{()}]
 set hlsearch " Use highlighting when doing a search.
+
+" for vim-gitgutter
+set updatetime=100
 " }}}
 
 " INDENTATION ------------------------------------------------------------ {{{
