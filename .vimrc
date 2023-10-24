@@ -186,8 +186,13 @@ nnoremap <C-w>t <C-w><C-]><C-w>T
 nnoremap <C-g>g :grep<space>-r<space>--exclude-dir<space>.git<space>""<space>.<left><left><left>
 nnoremap <C-g><space> :cw<cr>
 
-" tabnew shortcut
-nnoremap gn :tabnew<space>
+" tabfind shortcut
+nnoremap gn :tabfind<space>
+" recover latest closed tab
+nnoremap gN :tabnew +buf<left><left><left>
+
+" cmd+f to find in current
+nnoremap  ff /
 
 " }}}
 

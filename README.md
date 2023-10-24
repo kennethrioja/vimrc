@@ -16,6 +16,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 vim +'PlugInstall --sync' +qa
 ```
 
+Also install [vim-gitgutter](https://github.com/airblade/vim-gitgutter) !
+
 ## For the 42 students out here :
 
 To enable the 42 header, execute these lines in the terminal **while replacing** ```YOURUSERNAME``` and ```YOUREMAILADDRESS``` by yours :
