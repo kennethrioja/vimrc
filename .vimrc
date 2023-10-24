@@ -78,6 +78,10 @@ set hlsearch " Use highlighting when doing a search.
 set updatetime=100
 " }}}
 
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
+
 " INDENTATION ------------------------------------------------------------ {{{
 " set smarttab "Insert “tabstop” number of spaces with the “tab” key
 " set softtabstop=4 "Number of spaces in <Tab>
@@ -181,7 +185,6 @@ nnoremap <C-w>t <C-w><C-]><C-w>T
 " GREP shortcut
 nnoremap <C-g>g :grep<space>-r<space>--exclude-dir<space>.git<space>""<space>.<left><left><left>
 nnoremap <C-g><space> :cw<cr>
-
 
 " }}}
 
