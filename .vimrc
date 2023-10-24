@@ -186,6 +186,9 @@ nnoremap <C-w>t <C-w><C-]><C-w>T
 nnoremap <C-g>g :grep<space>-r<space>--exclude-dir<space>.git<space>""<space>.<left><left><left>
 nnoremap <C-g><space> :cw<cr>
 
+" tabnew shortcut
+nnoremap gn :tabnew<space>
+
 " }}}
 
 " MISCELLANEOUS ---------------------------------------------------------- {{{
