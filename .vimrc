@@ -169,9 +169,9 @@ nnoremap el A<space><<<space>std::endl;<esc>
 
 " ctags :
 " create 'tags_cir6' when opening vim
-silent !ctags -R --exclude=.git -f tags_cir6
+" silent !ctags -R --exclude=.git -f tags_cir6
 " set tags 
-set tags=./tags,tags,./tags_cir6,tags_cir6
+" set tags=./tags,tags,./tags_cir6,tags_cir6
 " delete 'tags_cir6' when quitting vim
 " augroup autocom
 "     autocmd!
