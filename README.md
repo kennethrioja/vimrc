@@ -19,6 +19,13 @@ vim +'PlugInstall --sync' +qa
 
 Also install [vim-gitgutter](https://github.com/airblade/vim-gitgutter) !
 
+For an alias on MacOS to open vimwiki simply by executing `ww`, run this command in the terminal:
+
+```sh
+echo "alias ww='vim -C VimwikiIndex'" >> ~/.zshrc
+source ~/.zshrc
+```
+
 ## For the 42 students out here :
 
 To enable the 42 header, execute these lines in the terminal **while replacing** ```YOURUSERNAME``` and ```YOUREMAILADDRESS``` by yours :
