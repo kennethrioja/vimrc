@@ -22,7 +22,7 @@ Also install [vim-gitgutter](https://github.com/airblade/vim-gitgutter) !
 For an alias on MacOS to open vimwiki simply by executing `ww`, run this command in the terminal:
 
 ```sh
-echo "alias ww='vim -C VimwikiIndex'" >> ~/.zshrc
+echo "alias ww='vim -c VimwikiIndex'" >> ~/.zshrc
 source ~/.zshrc
 ```
 
