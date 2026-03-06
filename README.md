@@ -44,3 +44,11 @@ To allow vimwiki to open URLs, execute this :
 echo -e '\n# for vimwiki URLs to work in WSL\nexport BROWSER="powershell.exe /C start"' >> ~/.bashrc && \
 source ~/.bashrc
 ```
+
+## Using VSCode/VSCodium?
+
+To allow repetition of vim's key:
+
+``defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
+`defaults write -app VSCodium ApplePressAndHoldEnabled -bool false`
