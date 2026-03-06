@@ -30,6 +30,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vimwiki/vimwiki'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 " }}}
 
